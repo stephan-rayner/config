@@ -5,3 +5,6 @@ config:
 
 clean:
 	cd vim; make clean
+	cd git; make clean
+	cd fish; make clean
+update: clean config

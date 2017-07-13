@@ -1,25 +1,12 @@
-# Data Science Dev Box
+alias cls="clear; ls"
+alias cla="clear; ls -alh"
+alias sfish="source ~/.config/fish/config.fish"
 
-function asdf
-    clear
-    git branch
-    git status
-end
+# Sourcing Modules
+source ~/.config/fish/functions/git.fish
 
-function cls
-    clear
-    ls
-end
-
-function unison-clean
-    cd ~/.unison;
-    rm *;
-    cd ~;
-end
-
-function cla
-    clear
-    ls -alh
+function sfish
+    source ~/.config/fish/config.fish
 end
 
 function sys
@@ -40,17 +27,17 @@ function j2dev
 end
 
 
-function fish_prompt
-    if [ (whoami) = 'root' ]
-  	# something simple for root user
-      	printf '%sROOT::[%s]%s :: %s' (set_color --bold red) (pwd) (set_color red) (set_color normal)
-    else
-        set last_status $status
-        set_color 0FF
-        printf '(development) %s' (prompt_pwd)
-        set_color normal
-        printf '%s ' (__fish_git_prompt)
-        echo -n ':: '
-       	set_color normal
-    end
-end
+# function fish_prompt
+#     if [ (whoami) = 'root' ]
+#   	# something simple for root user
+#       	printf '%sROOT::[%s]%s :: %s' (set_color --bold red) (pwd) (set_color red) (set_color normal)
+#     else
+#         set last_status $status
+#         set_color 0FF
+#         printf '(development) %s' (prompt_pwd)
+#         set_color normal
+#         printf '%s ' (__fish_git_prompt)
+#         echo -n ':: '
+#        	set_color normal
+#     end
+# end
