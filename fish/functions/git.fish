@@ -1,5 +1,5 @@
 alias asdf="clear; pwd; echo; git branch; git status"
-alias g.branch="git branch | grep '*' | tr '*' ' ' | tr -d '[:space:]'"
+alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
 
 function g.push
     git push origin (g.branch)
