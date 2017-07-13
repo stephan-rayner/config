@@ -1,5 +1,6 @@
 # config
 This is where I keep my config files.
 
-# To Use
-clone the repository into ~/dev as config and then run make config
+# usage
+- clone the repository into ~/dev
+- run make config
