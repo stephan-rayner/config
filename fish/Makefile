@@ -5,3 +5,4 @@ clean:
 	unlink ~/.config/fish/config.fish
 	rm -r ~/.config/fish/functions
 update: clean up
+	sfish
