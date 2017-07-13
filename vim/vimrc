@@ -1,0 +1,42 @@
+syntax enable
+colorscheme peachpuff
+"colorscheme monokai
+"-------------General Settings--------------"
+set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
+let mapleader = ' ' 						    	"The default leader is \, but a comma is much better.
+set clipboard=unnamed							"Vim copy now copies to the clipboard
+set number								"Let's activate line numbers.
+set mouse=r
+
+set tabstop=8
+set softtabstop=0 expandtab
+set shiftwidth=4 smarttab
+
+"-------------Search--------------"
+set hlsearch
+set incsearch
+
+"-------------Split Managment--------------"
+nmap <C-J> <C-W><C-J>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+nmap <C-K> <C-K><C-K>
+
+"-------------Mappings--------------"
+
+"Make it easy to edit the Vimrc file.
+nmap <Leader>ev :tabedit $MYVIMRC<cr>
+
+"Add simple highlight removal.
+nmap <Leader>, :nohlsearch<cr>
+"-------------Commands--------------"
+":command -bang Q quit<bang>
+
+"-------------Auto-Commands--------------"
+
+"Automatically source the Vimrc file on save.
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
+

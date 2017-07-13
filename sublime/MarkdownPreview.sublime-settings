@@ -1,0 +1,6 @@
+{
+/*
+    Enable mathjax support.
+*/
+"enable_mathjax": true,
+}
