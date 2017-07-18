@@ -1,6 +1,7 @@
 alias cls="clear; pwd; echo; ls"
 alias cla="clear; pwd; echo; ls -alh"
 alias sfish="source ~/.config/fish/config.fish"
+alias py="python3"
 
 # Sourcing Modules
 source ~/.config/fish/functions/git.fish
