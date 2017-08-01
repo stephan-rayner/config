@@ -1,4 +1,5 @@
 alias py=python3
+alias py.profile="py -m cProfile"
 
 function py.module
     set dir $argv[1]
@@ -7,6 +8,3 @@ function py.module
     touch __init__.py
 end
 
-function py.profile
-    py -m cProfile $argv[1]
-end
