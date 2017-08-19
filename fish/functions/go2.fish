@@ -7,6 +7,13 @@ function j2
             cd ~/dev/code
         case config
             cd ~/dev/config
+        case tools
+            cd ~/dev/tools
+        case environments
+            cd ~/dev/environments
+        case analysis
+            j2 environments
+            cd analysis
         case '*'
             echo I do not know of any location named $location
     end
