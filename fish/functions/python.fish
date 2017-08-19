@@ -1,5 +1,5 @@
 alias py=python3
-alias py.profile="py -m cProfile"
+alias py.profile="clear; py -m cProfile"
 
 function py.module
     set dir $argv[1]
