@@ -1,6 +1,6 @@
 alias cls="clear; pwd; echo; ls"
 alias cla="clear; pwd; echo; ls -alh"
-alias sfish="source ~/.config/fish/config.fish"
+alias sfish=". ~/.config/fish/config.fish"
 
 # Sourcing Modules
 # ===============================================================
@@ -24,3 +24,4 @@ end
 
 # ===============================================================
 
+alias pbcopy="xclip -sel clip"
