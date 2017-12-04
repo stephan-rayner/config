@@ -14,6 +14,8 @@ function j2
         case analysis
             j2 environments
             cd analysis
+        case current
+            cd $current
         case '*'
             echo I do not know of any location named $location
     end
