@@ -1,5 +1,7 @@
 alias asdf="clear; pwd; echo; git branch; git status"
 alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
+alias g.log="clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
 
 function g.push
     git push origin (g.branch)
