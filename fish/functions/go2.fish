@@ -5,6 +5,8 @@ function j2
             cd ~/dev
         case code
             cd ~/dev/code
+        case projects
+            cd ~/dev/code/projects
         case config
             cd ~/dev/config
         case tools
