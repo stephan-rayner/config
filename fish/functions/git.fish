@@ -1,6 +1,7 @@
 alias asdf="clear; pwd; echo; git branch; git status"
 alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
-alias g.log="clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias g.today="git log --before (date) --after (date --date yesterday)"
+alias g.log="clear; git log --graph --decorate=short --abbrev-commit"
 
 
 function g.push
@@ -23,5 +24,10 @@ end
 
 function g.fetch-all
     bash (dirname (status --current-filename))/scripts/git-fetch-all.sh
-
 end
+
+
+function g.clean-merged
+    git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
+end
+
