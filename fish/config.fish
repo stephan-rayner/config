@@ -23,5 +23,7 @@ function sfish
 end
 
 # ===============================================================
-
-alias pbcopy="xclip -sel clip"
+switch (uname)
+case Linux
+    alias pbcopy="xclip -sel clip"
+end
