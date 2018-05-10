@@ -6,7 +6,7 @@ alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
 alias g.today="git log --before (date) --after (date --date yesterday)"
 alias g.log="clear; git log --graph --decorate=short --abbrev-commit"
 
-alias g.conflict="grep -r "<<<<<<<" *"
+alias g.conflict="grep -r '<<<<<<<' *"
 
 function g.push
     git push origin (g.branch)
