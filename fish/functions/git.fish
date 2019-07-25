@@ -1,12 +1,10 @@
 
 alias asdf="clear; pwd; echo; git branch; git status"
-
 alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
-
 alias g.today="git log --before (date) --after (date --date yesterday)"
 alias g.log="clear; git log --graph --decorate=short --abbrev-commit"
-
 alias g.conflict="grep -r '<<<<<<<' *"
+alias g.branch.purge="git branch -d (git branch | grep -v master | grep -v '*' | tr -d ' ')"
 
 function g.push
     git push origin (g.branch)

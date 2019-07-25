@@ -1,10 +1,14 @@
 [user]
   name = Stephan Rayner
   email = stephan.rayner@gmail.com
+
 [core]
   editor = vim
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
   #excludesfile = ~/.gitignore
+
+[status]
+  submoduleSummary = true
 
 [color]
   ui = auto
