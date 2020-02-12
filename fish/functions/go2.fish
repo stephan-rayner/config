@@ -1,18 +1,19 @@
 function j2
     set location $argv[1]
+    set dev_dir ~/dev
     switch $location
         case dev
-            cd ~/dev
+            cd $dev_dir
         case code
-            cd ~/dev/code
+            cd $dev_dir/code
         case projects
-            cd ~/dev/code/projects
+            cd $dev_dir/code/projects
         case config
-            cd ~/dev/config
+            cd $dev_dir/config
         case tools
-            cd ~/dev/tools
+            cd $dev_dir/tools
         case environments
-            cd ~/dev/environments
+            cd $dev_dir/environments
         case analysis
             j2 environments
             cd analysis
