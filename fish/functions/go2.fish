@@ -1,6 +1,6 @@
 function j2
     set location $argv[1]
-    set dev_dir ~/dev
+    set dev_dir ~/Dev
     switch $location
         case dev
             cd $dev_dir
