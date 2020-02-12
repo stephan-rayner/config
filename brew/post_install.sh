@@ -8,7 +8,7 @@ break_line(){
 
 install(){
     brew analytics off;
-    brew install fish htop bash wget watch bat tldr micro fx
+    brew install fish htop bash wget watch bat tldr micro fx exa
     brew install python3 go node 
 }
 
