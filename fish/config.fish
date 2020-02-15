@@ -10,6 +10,7 @@ alias sfish=". ~/.config/fish/config.fish"
 . ~/.config/fish/functions/sublime.fish
 . ~/.config/fish/functions/sys.fish
 . ~/.config/fish/functions/time.fish
+. ~/.config/fish/functions/ls.fish
 
 if test -e ~/.config/fish/functions/work_specific.fish
     . ~/.config/fish/functions/work_specific.fish
