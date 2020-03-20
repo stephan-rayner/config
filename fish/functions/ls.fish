@@ -1,1 +1,1 @@
-alias l="exa"
+alias l="pwd; echo; exa"

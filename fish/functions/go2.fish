@@ -4,6 +4,8 @@ function j2
     switch $location
         case dev
             cd $dev_dir
+        case proto
+            cd $dev_dir/proto
         case code
             cd $dev_dir/code
         case projects
