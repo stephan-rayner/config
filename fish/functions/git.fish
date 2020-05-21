@@ -1,5 +1,6 @@
 
 alias asdf="clear; pwd; echo; git branch; git status"
+alias g.clone="git clone --recursive"
 alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
 alias g.today="git log --before (date) --after (date --date yesterday)"
 alias g.log="clear; git log --graph --decorate=short --abbrev-commit"
