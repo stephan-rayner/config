@@ -6,6 +6,7 @@ alias g.today="git log --before (date) --after (date --date yesterday)"
 alias g.log="clear; git log --graph --decorate=short --abbrev-commit"
 alias g.conflict="grep -r '<<<<<<<' *"
 alias g.branch.purge="git branch -d (git branch | grep -v master | grep -v '*' | tr -d ' ')"
+alias g.latest="git fetch; g.pull"
 
 function g.push
     git push origin (g.branch)
