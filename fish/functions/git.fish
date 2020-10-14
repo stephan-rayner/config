@@ -1,4 +1,3 @@
-
 alias asdf="clear; pwd; echo; git branch; git status"
 alias g.clone="git clone --recursive"
 alias g.branch="git branch | grep '*' | tr -d '* [:space:]'"
@@ -33,4 +32,13 @@ end
 
 function g.clean-merged
     git branch --merged master | grep -v '^[ *]*master$' | xargs git branch -d
+end
+
+function g.help
+    set this_file ~/.config/fish/functions/git.fish
+    if test (which bat)
+        bat $this_file
+    else
+        cat $this_file
+    end
 end
