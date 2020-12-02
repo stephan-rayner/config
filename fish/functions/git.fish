@@ -13,7 +13,7 @@ end
 
 
 function g.pull
-    git pull origin (g.branch)
+    git pull origin (g.branch) --rebase
 end
 
 
