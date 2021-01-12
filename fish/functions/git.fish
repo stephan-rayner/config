@@ -11,6 +11,10 @@ function g.push
     git push origin (g.branch)
 end
 
+function g.diff
+    set preview "git diff $argv --color=always -- {-1}"
+    git diff $argv --name-only | fzf -m --ansi --preview $preview --reverse
+end
 
 function g.pull
     git pull origin (g.branch) --rebase
